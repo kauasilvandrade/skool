@@ -1,11 +1,20 @@
 @import url(utilityClass.css);
 
-:root {}
+:root {
+  --bg-color: #222222;
+  --color-primary: #909090;
+  --color-secondary: #E4E4E4;
+  --border: #444444;
+}
 
 *, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 img {
