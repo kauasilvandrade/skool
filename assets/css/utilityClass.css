@@ -6,8 +6,16 @@
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
+}
+
+.gap-10 {
+  gap: 0.625rem;
 }
 
 .gap-16 {

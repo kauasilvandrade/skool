@@ -25,3 +25,9 @@ button {
   background-color: transparent;
   border: none;
 }
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
