@@ -4,6 +4,10 @@
   gap: 3rem;
   padding-top: 3rem;
 
+  /* 
+    elemento ao passar o mouse no nome
+  */
+
   main {
     .writeSomething {
       div img {

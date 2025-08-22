@@ -118,9 +118,24 @@ header {
           left: 2rem;
         }
 
+        &:hover .tooltip {
+          transform: scale(1);
+        }
+        
+        .tooltip {
+          position: absolute;
+          white-space: nowrap;
+          bottom: -3rem;
+          padding: 0.7rem;
+          border-radius: 5px;
+          background-color: #333333;
+          box-shadow: 0px 2px 20px #000000bd;
+          font-size: 0.8em;
+          transition: .3s;
+          transform: scale(0);
+        }
+
       }
-
-
 
     }
     
