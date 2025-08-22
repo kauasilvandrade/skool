@@ -1,0 +1,127 @@
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 0.8rem 0;
+
+  .search {
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    figure {
+
+      cursor: pointer;
+
+      &:hover figcaption::after {
+        width: 100%;
+        left: 0;
+      }
+
+      img {
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 10px;
+      }
+
+      figcaption {
+        font-weight: bold;
+        font-size: 1.3em;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 0%;
+          height: 3px;
+          background-color: var(--color-secondary);
+          position: absolute;
+          bottom: -1rem;
+          left: 50%;
+          transition: .2s linear;
+        }
+      }
+
+    }
+
+    .inputWrapper {
+      flex-grow: 1;
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 0.6em 4rem;
+        font-size: 1.2em;
+        border-radius: 10px;
+        outline: none;
+        background-color: var(--border);
+        border: none;
+        transition: .2s;
+        border: 1px solid transparent;
+        color: var(--color-secondary);
+        
+        &::placeholder {
+          color: var(--color-primary);
+        }
+
+        &:focus, &:hover {
+          border: 1px solid var(--color-secondary);
+        }
+      }
+
+      i {
+        position: absolute;
+        color: var(--color-primary);
+        left: 1.6rem;
+        top: 0.9rem;
+        font-size: 1.1em;
+      }
+    }
+
+    .profile {
+      gap: 0.7rem;
+
+      div {
+        padding: 0.6rem;
+        border-radius: 50%;
+        justify-content: center;
+        cursor: pointer;
+        transition: .3s;
+        position: relative;
+        
+        &:hover {
+          background-color: #444444;
+        }
+
+        img {
+          width: 1.7rem;
+          height: 1.7rem;
+        }
+        
+        img[src*="profile"] {
+          border-radius: 50%;
+          width: 2.3rem;
+          height: 2.3rem;
+        }
+
+        &:has(img[src*="notifications"])::before {
+          content: '18';
+          width: 1.4rem;
+          height: 1rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #E74C3C;
+          position: absolute;
+          top: -0.3rem;
+          padding: 0.8rem;
+          font-size: 0.94em;
+          left: 2rem;
+        }
+
+      }
+
+
+
+    }
+    
+  }
+}

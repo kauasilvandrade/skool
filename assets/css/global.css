@@ -1,4 +1,7 @@
 @import url(utilityClass.css);
+@import url(header.css);
+@import url(main.css);
+@import url(aside.css);
 
 :root {
   --bg-color: #222222;
@@ -14,12 +17,11 @@
 }
 
 body {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--color-secondary);
 }
 
-img {
-  width: 1.5rem;
-}
 
 a {
   text-decoration: none;
