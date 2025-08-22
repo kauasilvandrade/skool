@@ -1,0 +1,115 @@
+.content {
+  display: grid;
+  grid-template-columns: 53rem 19rem;
+  gap: 3rem;
+  padding-top: 3rem;
+
+  main {
+    .writeSomething {
+      div img {
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+
+  aside {
+
+    .presentation, .rank {
+      background-color: #333333;
+      border-radius: 15px;
+      border: 1px solid var(--border);
+    }
+
+    .presentation {
+
+      img {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      .description {
+        padding: 1.1rem;
+
+        div:not(.flex) {
+
+          h3 {
+            margin-bottom: 0.5rem;
+          }
+          
+          span {
+            color: var(--color-primary);
+            font-weight: 500;
+          }
+
+        }
+
+        p {
+          font-size: 1.15em;
+        }
+
+        .numberOfMembers {
+          border-top: 1px solid var(--border);
+          border-bottom: 1px solid var(--border);
+          padding-block: 0.7rem;
+          text-align: center;
+          justify-content: center;
+
+          div {
+            gap: 0.1rem;
+
+            span.number {
+              color: var(--color-secondary);
+              font-size: 1.3em;
+              font-weight: 500;
+            }
+
+            span.activy {
+              color: var(--color-primary);
+              font-size: 0.85em;
+              font-weight: 500;
+            }
+
+            &:nth-child(2) {
+              padding-inline: 1.5rem;
+              border-left: 1px solid var(--border);
+              border-right: 1px solid var(--border);
+            }
+
+          }
+
+        }
+
+        a {
+          text-transform: uppercase;
+          font-size: 1.1em;
+          font-weight: 700;
+          color: var(--color-primary);
+          border: 1px solid var(--color-primary);
+          border-radius: 5px;
+          text-align: center;
+          padding: 0.8rem;
+          transition: .2s;
+
+          &:hover {
+            color: var(--color-secondary);
+            border: 1px solid var(--color-secondary);
+          }
+        }
+
+      }
+
+    }
+
+    .rank {
+      ul li img {
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: cover;
+      }
+    }
+
+  }
+}

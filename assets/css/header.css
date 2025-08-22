@@ -125,24 +125,25 @@ header {
     
   }
 
-  nav {
-    ul {
-      
-      li:first-child {
+  nav ul {
+    
+    li {
+      font-weight: 700;
+      color: var(--color-primary);
+      font-size: 1.15em;
+      padding-bottom: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--color-secondary);
+      }
+
+      &:first-child {
         border-bottom: 4px solid var(--color-secondary);
       }
 
-      li {
-        font-weight: 700;
-        color: var(--color-primary);
-        font-size: 1.15em;
-        padding-bottom: 1rem;
-        cursor: pointer;
-
-        &:hover {
-          color: var(--color-secondary);
-        }
-      }
     }
+
   }
+
 }

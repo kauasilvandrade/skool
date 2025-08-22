@@ -10,10 +10,6 @@
   flex-direction: column;
 }
 
-.grid {
-  display: grid;
-}
-
 .gap-10 {
   gap: 0.625rem;
 }
