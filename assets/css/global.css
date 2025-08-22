@@ -8,6 +8,10 @@
   --color-primary: #909090;
   --color-secondary: #E4E4E4;
   --border: #444444;
+  --blue: #93B3F3;
+  --yellow: #F1D07C;
+  --silver: #909090;
+  --bronze: #A77B53;
 }
 
 *, *::before, *::after {
