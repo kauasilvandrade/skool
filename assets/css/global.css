@@ -1,7 +1,7 @@
 @import url(utilityClass.css);
-@import url(header.css);
-@import url(content.css);
-@import url(aside.css);
+@import url(partials/header.css);
+@import url(partials/content.css);
+@import url(partials/aside.css);
 @import url(elements.css);
 
 :root {
