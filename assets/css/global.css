@@ -26,6 +26,7 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--color-secondary);
+  position: relative;
 }
 
 
@@ -46,4 +47,21 @@ button {
 .container {
   margin: auto;
   max-width: 1200px;
+}
+
+body.expanded::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: #000000ad;
+  z-index: 1;
+}
+
+body.expanded .writeSomething {
+  height: 19.4rem;
+}
+
+body.expanded .writeSomething form {
+  overflow: auto;
+  visibility: visible;
 }
