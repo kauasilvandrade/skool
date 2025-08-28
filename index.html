@@ -88,8 +88,8 @@
         </div>
 
         <form>
-          <input type="text" name="title" id="title" placeholder="Title" required>
-          <textarea name="message" id="message" placeholder="Write Something..." required></textarea>
+          <input type="text" name="namePost" id="namePost" placeholder="Title" required>
+          <textarea name="messagePost" id="messagePost" placeholder="Write Something..." required></textarea>
 
           <div class="actions flex">
             <ul role="list" class="mediaList flex items-center gap-16">
@@ -131,7 +131,7 @@
 
             <div class="actionsButtons">
               <button id="cancel">Cancel</button>
-              <button id="post">Post</button>
+              <button id="post" disabled style="cursor: default;">Post</button>
             </div>
           </div>
         </form>
@@ -151,6 +151,8 @@
           <li><button>🏆 Vitórias</button></li>
 
           <li><button>📚 Estudos</button></li>
+
+          <li><button>More...</button></li>
 
           <li><button><img src="assets/images/icons/filter.svg" alt="Filter Icon"></button></li>
         </ul>
@@ -495,5 +497,6 @@
     </aside>
   </div>
 
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

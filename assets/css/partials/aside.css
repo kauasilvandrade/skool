@@ -100,7 +100,7 @@ aside {
           position: relative;
           &::after {
             content: '';
-            background-image: url(../images/iconRank-one.svg);
+            background-image: url(../../images/icons/iconRank-one.svg);
             background-repeat: no-repeat;
             width: 1rem;
             height: 1rem;
@@ -117,7 +117,7 @@ aside {
           position: relative;
           &::after {
             content: '';
-            background-image: url(../images/iconRank-two.svg);
+            background-image: url(../../images/icons/iconRank-two.);
             background-repeat: no-repeat;
             width: 1rem;
             height: 1rem;
@@ -134,7 +134,7 @@ aside {
           position: relative;
           &::after {
             content: '';
-            background-image: url(../images/iconRank-three.svg);
+            background-image: url(../../images/icons/iconRank-three.svg);
             background-repeat: no-repeat;
             width: 1rem;
             height: 1rem;
