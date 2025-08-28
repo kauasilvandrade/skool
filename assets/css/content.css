@@ -5,20 +5,70 @@
   padding-top: 3rem;
 
   main {
+
     .writeSomething {
-      div img {
-        border-radius: 50%;
-        width: 2.5rem;
-        height: 2.5rem;
-        object-fit: cover;
+      background-color: var(--card);
+      border-radius: 15px;
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+
+      div {
+        padding: 0.9rem 1rem;
+        cursor: pointer;
+
+        img {
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: cover;
+        }
+
+        h2 {
+          color: var(--color-primary);
+          font-weight: 500;
+          font-size: 1.3em;
+        }
+
       }
+
     }
+
+    .filter {
+
+      ul[role="list"] {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          background-color: var(--card);
+          border-radius: 25px;
+          border: 1px solid var(--border);
+          color: var(--color-primary);
+          cursor: pointer;
+          padding: 0.6rem 1rem;
+          font-size: 1em;
+
+          &:hover {
+            background-color: rgb(66, 65, 65);
+            color: var(--color-secondary);
+          }
+
+          img {
+            height: 1rem;
+          }
+
+        }
+
+      }
+
+    }
+
   }
 
   aside {
 
     .presentation, .rank {
-      background-color: #333333;
+      background-color: var(--card);
       border-radius: 15px;
       border: 1px solid var(--border);
     }
@@ -163,12 +213,17 @@
 
         & > div {
           flex-grow: 1;
+          position: relative;
 
           img {
             border-radius: 50%;
             width: 2.5rem;
             height: 2.5rem;
             object-fit: cover;
+          }
+
+          & a:hover ~ .userToolstip {
+            opacity: 1;
           }
 
           & > a:hover {

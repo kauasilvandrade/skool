@@ -17,14 +17,16 @@
 }
 
 .userToolstip {
-  display: none;
   position: absolute;
-  left: 5rem;
-  background-color: #333333;
+  right: 12rem;
+  top: -15rem;
+  background-color: var(--card);
   border-radius: 15px;
   border: 1px solid var(--border);
   width: 27rem;
   padding: 1rem;
+  z-index: 1;
+  opacity: 0;
 
   & > .userInfo {
     display: flex;
