@@ -120,3 +120,23 @@
   }
 
 }
+
+.tooltip {
+  position: absolute;
+  white-space: nowrap;
+  padding: 0.7rem;
+  border-radius: 5px;
+  background-color: var(--card);
+  box-shadow: 0px 2px 20px #000000bd;
+  font-size: 0.8em;
+  transition: .4s;
+  transform: scale(0);
+}
+
+.tooltip-bottom {
+  bottom: -3rem;
+}
+
+.tooltip-top {
+  top: -3rem;
+}

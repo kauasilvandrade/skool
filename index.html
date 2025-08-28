@@ -34,18 +34,18 @@
 
         <div class="profile flex items-center">
           <div class="flex items-center">
-            <img src="assets/images/chat.svg" alt="Ícone do chat">
-            <span class="tooltip">Chats</span>
+            <img src="assets/images/icons/chat.svg" alt="Ícone do chat">
+            <span class="tooltip tooltip-bottom">Chats</span>
           </div>
 
           <div class="flex items-center">
-            <img src="assets/images/notifications.svg" alt="Ícone de Notificações">
-            <span class="tooltip">Notifications</span>
+            <img src="assets/images/icons/notifications.svg" alt="Ícone de Notificações">
+            <span class="tooltip tooltip-bottom">Notifications</span>
           </div>
 
           <div class="flex items-center">
             <img src="assets/images/profile.jpeg" alt="Foto de perfil">
-            <span class="tooltip">User Menu</span>
+            <span class="tooltip tooltip-bottom">User Menu</span>
           </div>
         </div>
       </div>
@@ -86,6 +86,56 @@
           <img src="assets/images/profile.jpeg" alt="Foto de perfil">
           <h2>Write Something</h2>
         </div>
+
+        <form>
+          <input type="text" name="title" id="title" placeholder="Title" required>
+          <textarea name="message" id="message" placeholder="Write Something..." required></textarea>
+
+          <div class="actions flex">
+            <ul role="list" class="mediaList flex items-center gap-16">
+              <li>
+                <span class="tooltip tooltip-top">Add attachment</span>
+                <img src="assets/images/icons/attachment.svg" alt="Attachment Icon">
+              </li>
+              <li>
+                <span class="tooltip tooltip-top">Add link</span>
+                <img src="assets/images/icons/link.svg" alt="Link Icon">
+              </li>
+              <li>
+                <span class="tooltip tooltip-top">Add video</span>
+                <img src="assets/images/icons/video.svg" alt="Video Icon">
+              </li>
+              <li>
+                <span class="tooltip tooltip-top">Add poll</span>
+                <img src="assets/images/icons/poll.svg" alt="Poll Icon">
+              </li>
+              <li>
+                <span class="tooltip tooltip-top">Add emoji</span>
+                <img src="assets/images/icons/emoji.svg" alt="Emoji Icon">
+              </li>
+              <li>
+                <span class="tooltip tooltip-top">Add gif</span>
+                GIF
+              </li>
+              <li>
+                <select name="" id="">
+                  <option selected disabled>Select a category</option>
+                  <option value="">👥 Geral</option>
+                  <option value="">🏋️‍♂️ Saúde</option>
+                  <option value="">💸 Grana</option>
+                  <option value="">🏆 Vitórias</option>
+                  <option value="">📚 Estudos</option>
+                </select>
+              </li>
+            </ul>
+
+            <div class="actionsButtons">
+              <button id="cancel">Cancel</button>
+              <button id="post">Post</button>
+            </div>
+          </div>
+        </form>
+
       </section>
 
       <section class="filter">
@@ -102,9 +152,7 @@
 
           <li><button>📚 Estudos</button></li>
 
-          <li><button>More...</button></li>
-
-          <li><button><img src="assets/images/filter.svg" alt="Filter Icon"></button></li>
+          <li><button><img src="assets/images/icons/filter.svg" alt="Filter Icon"></button></li>
         </ul>
       </section>
 
@@ -124,11 +172,11 @@
 
             <div class="interaction flex items-center">
               <div class="flex items-center gap-10">
-                <img src="assets/images/like.svg" alt="Like Icon">3
+                <img src="assets/images/icons/like.svg" alt="Like Icon">3
               </div>
 
               <div class="flex items-center gap-10">
-                <img src="assets/images/coment.svg" alt="Coment Icon">3
+                <img src="assets/images/icons/coment.svg" alt="Coment Icon">3
               </div>
             </div>
           </li>
@@ -219,7 +267,7 @@
                 <div class="links flex gap-16">
                   <a href="#" class="link">Profile</a>
                   <a href="#" class="link">Following</a>
-                  <a href="#" class="link flex gap-10">Chat <img src="assets/images/chatUser.svg" alt="Icone do Chat"></a>
+                  <a href="#" class="link flex gap-10">Chat <img src="assets/images//icons/chatUser.svg" alt="Icone do Chat"></a>
                 </div>
 
               </div>
@@ -270,7 +318,7 @@
                 <div class="links flex gap-16">
                   <a href="#" class="link">Profile</a>
                   <a href="#" class="link">Following</a>
-                  <a href="#" class="link flex gap-10">Chat <img src="assets/images/chatUser.svg" alt="Icone do Chat"></a>
+                  <a href="#" class="link flex gap-10">Chat <img src="assets/images//icons/chatUser.svg" alt="Icone do Chat"></a>
                 </div>
 
               </div> 
@@ -325,7 +373,7 @@
                 <div class="links flex gap-16">
                   <a href="#" class="link">Profile</a>
                   <a href="#" class="link">Following</a>
-                  <a href="#" class="link flex gap-10">Chat <img src="assets/images/chatUser.svg" alt="Icone do Chat"></a>
+                  <a href="#" class="link flex gap-10">Chat <img src="assets/images//icons/chatUser.svg" alt="Icone do Chat"></a>
                 </div>
 
               </div> 
@@ -376,7 +424,7 @@
                 <div class="links flex gap-16">
                   <a href="#" class="link">Profile</a>
                   <a href="#" class="link">Following</a>
-                  <a href="#" class="link flex gap-10">Chat <img src="assets/images/chatUser.svg" alt="Icone do Chat"></a>
+                  <a href="#" class="link flex gap-10">Chat <img src="assets/images//icons/chatUser.svg" alt="Icone do Chat"></a>
                 </div>
 
               </div> 
@@ -428,7 +476,7 @@
                 <div class="links flex gap-16">
                   <a href="#" class="link">Profile</a>
                   <a href="#" class="link">Following</a>
-                  <a href="#" class="link flex gap-10">Chat <img src="assets/images/chatUser.svg" alt="Icone do Chat"></a>
+                  <a href="#" class="link flex gap-10">Chat <img src="assets/images//icons/chatUser.svg" alt="Icone do Chat"></a>
                 </div>
 
               </div> 

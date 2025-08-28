@@ -31,6 +31,105 @@
 
       }
 
+      form {
+        padding: 1rem;
+
+        input, textarea {
+          display: block;
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        input {}
+
+        textarea {}
+
+        .actions {
+          justify-content: space-between;
+          padding: 0 0 0.5rem;
+
+          .mediaList li {
+            border-radius: 20px;
+            padding: 0.7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #909090;
+            position: relative;
+
+            img {
+              width: 1.2rem;
+              height: 1.2rem;
+              border-radius: 0px;
+              object-fit: unset;
+            }
+
+            select {
+              border: none;
+              background-color: transparent;
+              color: #909090;
+              font-weight: bold;
+              font-size: 1em;
+              outline: none;
+
+              option {
+                background-color: rgb(51, 51, 51);
+                padding: 1rem;
+              }
+            }
+
+            &:hover {
+              background-color: rgb(66, 65, 65);
+            }
+
+            &:hover  .tooltip {
+              transform: scale(1);
+            }
+
+          }
+
+          .actionsButtons {
+            padding: 0;
+            display: flex;
+            gap: 0.5rem;
+
+            button {
+              text-transform: uppercase;
+              font-size: 1.1em;
+              font-weight: 700;
+              color: var(--color-primary);
+              border-radius: 5px;
+              text-align: center;
+              padding: 0.8rem;
+              transition: .2s;
+              display: inline-block;
+              width: 7rem;
+              cursor: pointer;
+
+          
+            }
+
+            #cancel {
+              &:hover {
+                color: var(--color-secondary);
+              }
+            }
+
+            #post {
+              background-color: var(--yellow);
+              color: var(--border);
+
+              &:hover {
+                background-color: #ccb068;
+              }
+            }
+          }
+
+        }
+      }
+
     }
 
     .filter {

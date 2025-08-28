@@ -78,6 +78,7 @@ aside {
 
     ul li {
       justify-content: space-between;
+      padding-right: 1rem;
 
       span {
         font-weight: 700;
