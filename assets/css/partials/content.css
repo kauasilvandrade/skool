@@ -133,8 +133,6 @@
               display: inline-block;
               width: 7rem;
               cursor: pointer;
-
-          
             }
 
             #cancel {
@@ -146,6 +144,7 @@
             #post {
               background-color: rgb(68, 68, 68);
               color: var(--color-secondary);
+              cursor: default;
             }
 
             #post.active {

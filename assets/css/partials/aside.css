@@ -117,7 +117,7 @@ aside {
           position: relative;
           &::after {
             content: '';
-            background-image: url(../../images/icons/iconRank-two.);
+            background-image: url(../../images/icons/iconRank-two.svg);
             background-repeat: no-repeat;
             width: 1rem;
             height: 1rem;
