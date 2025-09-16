@@ -1,0 +1,15 @@
+Correções
+- Hover do Leaderboard 
+- Select do WriteSomething
+
+
+Ações
+- Clicar no post, expandir em modal e poder dar like + comentário.
+- atualizar like e comentário 
+- Level e round nos perfil
+- Botão more e less
+- Nivel no Post
+- like amarelo -hover
+- Ações de select + outros ícones
+- filtrar post pela categoria
+- Adicionar comentários nos posts 
