@@ -18,10 +18,10 @@ export function createPost(namePost, messagePost, categoryPost) {
 
     <div class="interaction flex items-center">
       <div class="flex items-center gap-10">
-        <img src="assets/images/icons/like.svg" alt="Like Icon">3
+        <img src="assets/images/icons/like.svg" alt="Like Icon">0
       </div>
       <div class="flex items-center gap-10">
-        <img src="assets/images/icons/coment.svg" alt="Coment Icon">3
+        <img src="assets/images/icons/coment.svg" alt="Coment Icon">0
       </div>
     </div>
   `;
