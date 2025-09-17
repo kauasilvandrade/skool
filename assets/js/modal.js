@@ -1,4 +1,4 @@
-import { namePost, messagePost } from "./elements.js";
+import { namePost, messagePost, select} from "./elements.js";
 
 export function closeModal(e) {
   if (e) e.stopPropagation();
@@ -8,16 +8,10 @@ export function closeModal(e) {
 
 export function writePost() {
   document.body.classList.add("expanded");
-  setTimeout(() => {
-    if (namePost.value.trim() === "") {
-      namePost.focus();
-    } else {
-      messagePost.focus();
-    }
-  }, 500);
 }
 
 function clean() {
   namePost.value = "";
   messagePost.value = "";
+  select.selectedIndex = 0
 }

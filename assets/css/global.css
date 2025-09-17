@@ -62,7 +62,6 @@ body.expanded .writeSomething {
 }
 
 body.expanded .writeSomething form {
-  overflow: auto;
   visibility: visible;
   opacity: 1;
 }

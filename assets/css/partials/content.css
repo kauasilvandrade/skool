@@ -37,7 +37,6 @@
 
       form {
         padding: 1rem;
-        overflow: hidden;
         visibility: hidden;
         opacity: 0;
         transition: .1s;
@@ -103,6 +102,7 @@
               option {
                 background-color: rgb(51, 51, 51);
                 padding: 1rem;
+                cursor: pointer;
               }
             }
 
