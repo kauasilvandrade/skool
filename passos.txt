@@ -1,7 +1,10 @@
 Ordem: 
-- Like + 1
 - Nivel no Post
+
 - Level e round nos perfil
+- Nivel no modal
+- Correção no modal
+
 - Filtragem pela categoria
 - Exportação de arquivos do usuário
 - Modal que adiciona comentários(atualização ao fechar post)

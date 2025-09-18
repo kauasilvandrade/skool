@@ -15,6 +15,7 @@ export function createPost(namePost, messagePost, categoryPost) {
     li.innerHTML = `
       <div class="user flex gap-10 items-center">
         <img src="assets/images/profile.jpeg" alt="Foto de perfil">
+        <span class="numberLevel flex items-center">3</span>
         <div>
           <h4>Kauã da Silva</h4>
           <span class="time" data-created="${createdAt}">0s - ${categoryPost}</span>
