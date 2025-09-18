@@ -1,32 +1,45 @@
 export function createPost(namePost, messagePost, categoryPost) {
-  const createdAt = Date.now();
+  
+  try {
+    
+    if (categoryPost === "Select a category") {
+      throw new Error("Valor inválido!")
+    } 
 
-  const li = document.createElement("li");
-  li.classList.add("post");
+    const createdAt = Date.now();
+    
+    const li = document.createElement("li");
 
-  li.innerHTML = `
-    <div class="user flex gap-10 items-center">
+    li.classList.add("post");
+    
+    li.innerHTML = `
+      <div class="user flex gap-10 items-center">
       <img src="assets/images/profile.jpeg" alt="Foto de perfil">
       <div>
-        <h4>Kauã da Silva</h4>
-        <span class="time" data-created="${createdAt}">0s - ${categoryPost}</span>
+      <h4>Kauã da Silva</h4>
+      <span class="time" data-created="${createdAt}">0s - ${categoryPost}</span>
       </div> 
-    </div>
-
-    <h3>${namePost}</h3>
-    <p>${messagePost}</p>
-
-    <div class="interaction flex items-center">
+      </div>
+      
+      <h3>${namePost}</h3>
+      <p>${messagePost}</p>
+      
+      <div class="interaction flex items-center">
       <div class="flex items-center gap-10">
-        <img src="assets/images/icons/like.svg" alt="Like Icon">0
+      <img src="assets/images/icons/like.svg" alt="Like Icon">0
       </div>
       <div class="flex items-center gap-10">
-        <img src="assets/images/icons/coment.svg" alt="Coment Icon">0
+      <img src="assets/images/icons/coment.svg" alt="Coment Icon">0
       </div>
-    </div>
-  `;
+      </div>
+    `;
+    
+    return li;
 
-  return li;
+  } catch (error) {
+    console.log(error)
+    alert("Selecione uma categoria!")
+  }
 }
 
 setInterval(() => {

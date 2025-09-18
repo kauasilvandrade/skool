@@ -11,7 +11,12 @@ btnPost.addEventListener("click", (e) => {
 
   let categoryPost = select.options[category.selectedIndex].text
   
-  postList.append(createPost(namePost.value, messagePost.value, categoryPost));
+  let post = createPost(namePost.value, messagePost.value, categoryPost)
+
+  if (post !== undefined) {
+    postList.append(post);
+  }
+
   closeModal(e);
 });
 
