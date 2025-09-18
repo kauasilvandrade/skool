@@ -9,3 +9,7 @@ export const btnPost = document.getElementById("post");
 export const postList = document.querySelector(".postSection ul");
 
 export const select = document.getElementById("category")
+
+export const nameToolstip = document.querySelectorAll(".nameToolstip")
+export const userToolstip = document.querySelectorAll(".userToolstip")
+

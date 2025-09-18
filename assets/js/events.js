@@ -1,24 +1,51 @@
-import { namePost, messagePost, btnCancel, btnPost, writeSomething, postList, select} from "./elements.js";
+import * as elements from "./elements.js";
 import { validatePost } from "./validators.js";
-import { createPost } from "./posts.js";
+import { createPost, likePost } from "./posts.js";
 import { closeModal, writePost } from "./modal.js";
 
-namePost.addEventListener("input", validatePost);
-messagePost.addEventListener("input", validatePost);
+elements.namePost.addEventListener("input", validatePost);
+elements.messagePost.addEventListener("input", validatePost);
 
-btnPost.addEventListener("click", (e) => {
+elements.btnPost.addEventListener("click", (e) => {
   e.preventDefault();
 
-  let categoryPost = select.options[category.selectedIndex].text
+  let categoryPost = elements.select.options[category.selectedIndex].text
   
-  let post = createPost(namePost.value, messagePost.value, categoryPost)
+  let post = createPost(elements.namePost.value, elements.messagePost.value, categoryPost)
 
   if (post !== undefined) {
-    postList.append(post);
+    elements.postList.append(post);
   }
+  
+  likePost()
 
   closeModal(e);
 });
 
-btnCancel.addEventListener("click", closeModal);
-writeSomething.addEventListener("click", writePost);
+elements.btnCancel.addEventListener("click", closeModal);
+elements.writeSomething.addEventListener("click", writePost);
+
+elements.nameToolstip.forEach((link, index) => {
+  
+  link.addEventListener("mouseenter", () => {
+    elements.userToolstip[index].style.opacity = "1";
+  });
+
+  link.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      if (!elements.userToolstip[index].matches(":hover")) {
+        elements.userToolstip[index].style.opacity = "0";
+      }
+    }, 200);
+  });
+
+  // se sair de dentro do modal, some também
+  elements.userToolstip[index].addEventListener("mouseleave", () => {
+    elements.userToolstip[index].style.opacity = "0";
+  });
+});
+
+// elements.likeIcon.addEventListener("click", () => {
+//   alert("Opa")
+// })
+

@@ -1,12 +1,7 @@
-Correções
-- Hover do Leaderboard 
-
-Ações
-- Exportação de arquivos do usuário
+Ordem: 
 - Like + 1
-- Filtragem pela categoria
-- Modal que adiciona comentários(atualização ao fechar post)
-
 - Nivel no Post
 - Level e round nos perfil
-- Botão more e less
+- Filtragem pela categoria
+- Exportação de arquivos do usuário
+- Modal que adiciona comentários(atualização ao fechar post)

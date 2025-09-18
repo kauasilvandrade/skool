@@ -1,5 +1,9 @@
+import { timePosted } from "./posts.js"
+
 import "./elements.js"
 import "./events.js"
 import "./modal.js"
 import "./posts.js"
 import "./validators.js"
+
+timePosted()

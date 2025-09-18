@@ -156,10 +156,6 @@ aside {
           object-fit: cover;
         }
 
-        & a:hover ~ .userToolstip {
-          opacity: 1;
-        }
-
         & > a:hover {
           text-decoration: underline;
         }
